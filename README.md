@@ -234,3 +234,55 @@ Authorization: Bearer YOUR_JWT_TOKEN
 
 ## Important production upgrades
 This project is intentionally ready for frontend integration and college/placement demonstration. For a real commercial deployment, replace the demo payment flow with Razorpay/Stripe, use Redis for distributed seat locks, add a real QR/PDF ticket service, object storage for images, email/SMS providers, refresh-token rotation, rate limiting, audit logs, and centralized monitoring.
+
+
+---
+
+## ✨ Key Features
+
+### 🔐 Authentication & Security
+- Secure user registration and login
+- JWT-based authentication
+- BCrypt password encryption
+- USER, ORGANIZER and ADMIN roles
+- Role-based endpoint protection
+
+### 🎭 Event Management
+- Create and manage events
+- Multiple event categories
+- Event approval workflow
+- Search by city, type and title
+- Pagination and sorting
+
+### 🎟️ Seat Management
+- Automatic seat generation
+- Premium and regular seats
+- Real-time seat availability endpoint
+- Temporary 10-minute seat locking
+- Prevent duplicate seat booking
+
+### 📋 Booking System
+- Multi-seat booking
+- Booking history
+- Unique booking codes
+- QR ticket payload generation
+- Booking cancellation and refund status
+
+### 💳 Payments & Coupons
+- Demo payment transactions
+- Payment status tracking
+- Percentage and flat discounts
+- Coupon expiry and usage limits
+
+### 👤 User Features
+- User profile management
+- Favorites and wishlist
+- Notifications
+- Reviews and ratings
+
+### 🛡️ Admin Dashboard
+- Dashboard statistics
+- User and role management
+- Event approval
+- Booking management
+- Venue and coupon management
