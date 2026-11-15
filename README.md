@@ -350,3 +350,81 @@ Once the application starts successfully, test the API using Postman.
 ---
 
 **Note:** Update database credentials and all default development credentials before deployment. Never publish real passwords or JWT secrets.
+
+
+---
+
+## 🔗 REST API Endpoints
+
+### Authentication
+
+| Method | Endpoint | Description |
+|---|---|---|
+| POST | `/api/auth/register` | Register a new user |
+| POST | `/api/auth/login` | User login and JWT generation |
+
+### Events
+
+| Method | Endpoint | Description |
+|---|---|---|
+| GET | `/api/events/public` | Get public events |
+| GET | `/api/events/{id}` | Get event details |
+| POST | `/api/events` | Create an event |
+| PATCH | `/api/events/{id}/status` | Update event status |
+
+### Venues & Seats
+
+| Method | Endpoint | Description |
+|---|---|---|
+| GET | `/api/venues/public` | Get public venues |
+| POST | `/api/venues` | Create venue |
+| POST | `/api/venues/{id}/generate-seats` | Generate seats |
+| GET | `/api/events/{id}/seats` | Check seat availability |
+
+### Bookings
+
+| Method | Endpoint | Description |
+|---|---|---|
+| POST | `/api/bookings` | Create booking |
+| GET | `/api/bookings/mine` | Get my bookings |
+| GET | `/api/bookings/{code}` | Get booking details |
+| POST | `/api/bookings/{code}/cancel` | Cancel booking |
+
+### Temporary Seat Holds
+
+| Method | Endpoint | Description |
+|---|---|---|
+| POST | `/api/seat-holds` | Hold seats temporarily |
+| GET | `/api/seat-holds/mine` | Get my active holds |
+| DELETE | `/api/seat-holds/{id}` | Release seat hold |
+
+### User Profile
+
+| Method | Endpoint | Description |
+|---|---|---|
+| GET | `/api/me/profile` | View profile |
+| PATCH | `/api/me/profile` | Update profile |
+| GET | `/api/me/favorites` | Get favorite events |
+| GET | `/api/me/notifications` | Get notifications |
+| POST | `/api/events/{id}/favorite` | Add event to favorites |
+| POST | `/api/events/{id}/reviews` | Submit event review |
+
+### Payments
+
+| Method | Endpoint | Description |
+|---|---|---|
+| GET | `/api/payments/booking/{bookingId}` | Get payment details |
+
+### Admin
+
+| Method | Endpoint | Description |
+|---|---|---|
+| GET | `/api/admin/dashboard` | Dashboard statistics |
+| GET | `/api/admin/events/pending` | Pending events |
+| GET | `/api/admin/bookings` | All bookings |
+| GET | `/api/admin/users` | All users |
+| GET | `/api/admin/coupons` | List coupons |
+| POST | `/api/admin/coupons` | Create coupon |
+| DELETE | `/api/admin/coupons/{id}` | Delete coupon |
+
+**Note:** Protected endpoints require a valid JWT access token unless otherwise configured.
