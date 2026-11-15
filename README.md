@@ -4,6 +4,33 @@
 <img src="assets/banner.png" width="100%" alt="EventHub Backend Pro 3.0">
 
 </div>
+
+
+<div align="center">
+
+# EventHub Backend Pro 3.0
+
+### Event & Ticket Booking Platform API
+
+<p>
+  <img src="https://img.shields.io/badge/Java-21-orange?style=for-the-badge&logo=openjdk&logoColor=white">
+  <img src="https://img.shields.io/badge/Spring_Boot-3.5-green?style=for-the-badge&logo=springboot&logoColor=white">
+  <img src="https://img.shields.io/badge/MySQL-8.0-blue?style=for-the-badge&logo=mysql&logoColor=white">
+  <img src="https://img.shields.io/badge/Spring_Security-JWT-purple?style=for-the-badge&logo=springsecurity&logoColor=white">
+  <img src="https://img.shields.io/badge/Maven-Build-red?style=for-the-badge&logo=apachemaven&logoColor=white">
+</p>
+
+</div>
+
+---
+
+## About The Project
+
+EventHub Backend Pro 3.0 is a production-style event and ticket booking platform backend inspired by popular event booking applications.
+
+Built using Java 21, Spring Boot 3.5, MySQL, Spring Security and JWT authentication.
+
+
 # EventHub Backend Pro 3.0
 
 A production-style college/placement project backend inspired by large event and ticket booking platforms.
