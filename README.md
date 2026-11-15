@@ -286,3 +286,67 @@ This project is intentionally ready for frontend integration and college/placeme
 - Event approval
 - Booking management
 - Venue and coupon management
+
+
+
+---
+
+## ⚙️ Installation & Setup
+
+### Prerequisites
+
+Make sure you have installed:
+
+- Java JDK 21
+- MySQL Server 8.0+
+- Eclipse IDE
+- Maven
+- Git
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/Vickt2006/EventHub-Backend.git
+```
+
+### 2. Import into Eclipse
+
+1. Open Eclipse IDE.
+2. Select File → Import.
+3. Choose Maven → Existing Maven Projects.
+4. Select the cloned project folder.
+5. Click Finish.
+6. Right-click the project → Maven → Update Project.
+
+### 3. Configure MySQL
+
+Create the database:
+
+```sql
+CREATE DATABASE eventhub;
+```
+
+Open:
+
+`src/main/resources/application.properties`
+
+Update your MySQL credentials:
+
+```properties
+spring.datasource.username=root
+spring.datasource.password=YOUR_MYSQL_PASSWORD
+```
+
+### 4. Run the Application
+
+1. Open the main Spring Boot application class.
+2. Right-click `EventHubApplication.java`.
+3. Select Run As → Spring Boot App.
+
+### 5. Verify the Application
+
+Once the application starts successfully, test the API using Postman.
+
+---
+
+**Note:** Update database credentials and all default development credentials before deployment. Never publish real passwords or JWT secrets.
