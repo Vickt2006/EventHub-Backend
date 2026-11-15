@@ -1,3 +1,9 @@
+
+<div align="center">
+
+<img src="assets/banner.png" width="100%" alt="EventHub Backend Pro 3.0">
+
+</div>
 # EventHub Backend Pro 3.0
 
 A production-style college/placement project backend inspired by large event and ticket booking platforms.
